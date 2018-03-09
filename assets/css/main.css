@@ -1,0 +1,96 @@
+html,
+body {
+  background: #d1d1d1
+}
+
+h2 {
+  color: #cdcdcd;
+}
+
+.btn.btn-outline-info {
+  margin: 5px 3px;
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+  width: 90%;
+  margin-bottom: 25px;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+.card,
+.card-img {
+  border-radius: 10px !important;
+  border: none;
+}
+
+.card-content {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.card-img-overlay:hover {
+  background: linear-gradient(
+          rgba(20,20,20, .7),
+          rgba(20,20,20, .7));
+
+}
+
+.card-img-overlay:hover .card-content {
+  visibility: visible;
+}
+
+.search-group {
+  padding: 2px;
+  border: 1px solid white;
+  background: white;
+  border-radius: 5px;
+}
+
+.form-control {
+  border: none;
+}
+
+.form-control:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.btn-search {
+  color: #fff;
+  background-color: #ff784f;
+  border: none;
+}
+
+.btn-search:hover {
+  color: #fff;
+  background-color: #d9764c;
+  border: none;
+}
+
+.btn-search:not(:disabled):not(.disabled):active,
+.btn-search:not(:disabled):not(.disabled).active {
+  color: #fff;
+  background-color: #ff784f;
+  border: none;
+}
+
+.btn-search:focus, .btn-search.focus {
+  box-shadow: none;
+}
+
+.bg-buttons {
+  background: #0b0b0b;
+  padding: 10px 0;
+}
+
+.border-top-bottom {
+  border-bottom: 1px solid #3f3f3f;
+  border-top: 1px solid #3f3f3f;
+}
