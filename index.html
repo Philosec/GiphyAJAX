@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>The Giphiest Gifs!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -17,15 +17,15 @@
     <div class="container">
       <header>
         <div class="row d-flex pt-3 pb-3">
-          <div class="col-md-2 my-auto text-center">
+          <div class="col-lg-3 my-auto text-center">
             <h2 class="mb-md-0">Search Gifs</h2>
           </div>
 
-          <div class="col-md-10">
+          <div class="col-lg-9">
             <div class="search-group">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Animal Type">
-                <button class="btn btn-search" type="button">Button</button>
+                <input type="text" class="form-control movie-title" placeholder="Sci-Fi Movie Title">
+                <button class="btn btn-search" type="button">Add Movie</button>
               </div>
             </div>
           </div>
@@ -37,37 +37,7 @@
   <div class="bg-buttons border-top-bottom">
     <div class="container">
       <div class="row">
-        <div class="col text-center">
-          <button class="btn btn-outline-info">Cat</button>
-          <button class="btn btn-outline-info">Dog</button>
-          <button class="btn btn-outline-info">Mouse</button>
-          <button class="btn btn-outline-info">Horse</button>
-          <button class="btn btn-outline-info">Cat</button>
-          <button class="btn btn-outline-info">Dog</button>
-          <button class="btn btn-outline-info">Mouse</button>
-          <button class="btn btn-outline-info">Horse</button>
-          <button class="btn btn-outline-info">Cat</button>
-          <button class="btn btn-outline-info">Dog</button>
-          <button class="btn btn-outline-info">Cat</button>
-          <button class="btn btn-outline-info">Dog</button>
-          <button class="btn btn-outline-info">Mouse</button>
-          <button class="btn btn-outline-info">Horse</button>
-          <button class="btn btn-outline-info">Cat</button>
-          <button class="btn btn-outline-info">Dog</button>
-          <button class="btn btn-outline-info">Mouse</button>
-          <button class="btn btn-outline-info">Horse</button>
-          <button class="btn btn-outline-info">Cat</button>
-          <button class="btn btn-outline-info">Dog</button>
-          <button class="btn btn-outline-info">Cat</button>
-          <button class="btn btn-outline-info">Dog</button>
-          <button class="btn btn-outline-info">Mouse</button>
-          <button class="btn btn-outline-info">Horse</button>
-          <button class="btn btn-outline-info">Cat</button>
-          <button class="btn btn-outline-info">Dog</button>
-          <button class="btn btn-outline-info">Mouse</button>
-          <button class="btn btn-outline-info">Horse</button>
-          <button class="btn btn-outline-info">Cat</button>
-          <button class="btn btn-outline-info">Dog</button>
+        <div class="col text-center btn-container">
         </div>
       </div>
     </div>
@@ -77,20 +47,13 @@
 <div class="container-fluid">
 
   <div class="container">
-
-    <div class="row mb-4">
-      <div class="col text-center">
-        <div class="display-4">Results: <span class="num-results">10</span></div>
-      </div>
-    </div>
-
     <div class="row d-flex align-items-center">
-      <div class="col-sm-6 col-md-4 ">
-        <div class="card bg-dark text-white">
-          <img class="card-img" src="https://media.giphy.com/media/kwZBrbVxwmyVOYQjQj/giphy.gif" alt="Card image">
+      <div class="col-sm-6 col-md-4">
+        <div class="card bg-dark text-white gif-result-0 animate invisible">
+          <img class="card-img" src="" alt="Card image" data-paused-src="" data-playing-src="" data-state="playing">
           <div class="card-img-overlay d-flex">
             <div class="card-content my-auto mx-auto">
-              <div class="rating mb-3">Rating: <span>G</span></div>
+              <div class="mb-3">Rating: <span class="rating">G</span></div>
               <button class="btn btn-light gif-state-btn">Pause</button>
             </div>
           </div>
@@ -98,11 +61,11 @@
       </div>
 
       <div class="col-sm-6 col-md-4">
-        <div class="card bg-dark text-white">
-          <img class="card-img" src="https://media.giphy.com/media/3o751P5trCi6fCofao/giphy.gif" alt="Card image">
+        <div class="card bg-dark text-white gif-result-1 animate invisible">
+          <img class="card-img" src="" alt="Card image" data-paused-src="" data-playing-src="" data-state="playing">
           <div class="card-img-overlay d-flex">
             <div class="card-content my-auto mx-auto">
-              <div class="rating mb-3">Rating: <span>G</span></div>
+              <div class="mb-3">Rating: <span class="rating">G</span></div>
               <button class="btn btn-light gif-state-btn">Pause</button>
             </div>
           </div>
@@ -110,11 +73,11 @@
       </div>
 
       <div class="col-sm-6 col-md-4">
-        <div class="card bg-dark text-white">
-          <img class="card-img" src="https://media.giphy.com/media/aO7isOOtxFjt6/giphy.gif" alt="Card image">
+        <div class="card bg-dark text-white gif-result-2 animate invisible">
+          <img class="card-img" src="" alt="Card image" data-paused-src="" data-playing-src="" data-state="playing">
           <div class="card-img-overlay d-flex">
             <div class="card-content my-auto mx-auto">
-              <div class="rating mb-3">Rating: <span>G</span></div>
+              <div class="mb-3">Rating: <span class="rating">G</span></div>
               <button class="btn btn-light gif-state-btn">Pause</button>
             </div>
           </div>
@@ -122,11 +85,11 @@
       </div>
 
       <div class="col-sm-6 col-md-4">
-        <div class="card bg-dark text-white">
-          <img class="card-img" src="https://media.giphy.com/media/3o7TKylTxz5tIgJJmw/giphy.gif" alt="Card image">
+        <div class="card bg-dark text-white gif-result-3 animate invisible">
+          <img class="card-img" src="" alt="Card image" data-paused-src="" data-playing-src="" data-state="playing">
           <div class="card-img-overlay d-flex">
             <div class="card-content my-auto mx-auto">
-              <div class="rating mb-3">Rating: <span>G</span></div>
+              <div class="mb-3">Rating: <span class="rating">G</span></div>
               <button class="btn btn-light gif-state-btn">Pause</button>
             </div>
           </div>
@@ -134,11 +97,71 @@
       </div>
 
       <div class="col-sm-6 col-md-4">
-        <div class="card bg-dark text-white">
-          <img class="card-img" src="https://media.giphy.com/media/3o6gE9iyQVIBUSH6ne/giphy.gif" alt="Card image">
+        <div class="card bg-dark text-white gif-result-4 animate invisible">
+          <img class="card-img" src="" alt="Card image" data-paused-src="" data-playing-src="" data-state="playing">
           <div class="card-img-overlay d-flex">
             <div class="card-content my-auto mx-auto">
-              <div class="rating mb-3">Rating: <span>G</span></div>
+              <div class="mb-3">Rating: <span class="rating">G</span></div>
+              <button class="btn btn-light gif-state-btn">Pause</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card bg-dark text-white gif-result-5 animate invisible">
+          <img class="card-img" src="" alt="Card image" data-paused-src="" data-playing-src="" data-state="playing">
+          <div class="card-img-overlay d-flex">
+            <div class="card-content my-auto mx-auto">
+              <div class="mb-3">Rating: <span class="rating">G</span></div>
+              <button class="btn btn-light gif-state-btn">Pause</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card bg-dark text-white gif-result-6 animate invisible">
+          <img class="card-img" src="" alt="Card image" data-paused-src="" data-playing-src="" data-state="playing">
+          <div class="card-img-overlay d-flex">
+            <div class="card-content my-auto mx-auto">
+              <div class="mb-3">Rating: <span class="rating">G</span></div>
+              <button class="btn btn-light gif-state-btn">Pause</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card bg-dark text-white gif-result-7 animate invisible">
+          <img class="card-img" src="" alt="Card image" data-paused-src="" data-playing-src="" data-state="playing">
+          <div class="card-img-overlay d-flex">
+            <div class="card-content my-auto mx-auto">
+              <div class="mb-3">Rating: <span class="rating">G</span></div>
+              <button class="btn btn-light gif-state-btn">Pause</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card bg-dark text-white gif-result-8 animate invisible">
+          <img class="card-img" src="" alt="Card image" data-paused-src="" data-playing-src="" data-state="playing">
+          <div class="card-img-overlay d-flex">
+            <div class="card-content my-auto mx-auto">
+              <div class="mb-3">Rating: <span class="rating">G</span></div>
+              <button class="btn btn-light gif-state-btn">Pause</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card bg-dark text-white gif-result-9 animate invisible">
+          <img class="card-img" src="" alt="Card image" data-paused-src="" data-playing-src="" data-state="playing">
+          <div class="card-img-overlay d-flex">
+            <div class="card-content my-auto mx-auto">
+              <div class="mb-3">Rating: <span class="rating">G</span></div>
               <button class="btn btn-light gif-state-btn">Pause</button>
             </div>
           </div>
@@ -148,15 +171,10 @@
   </div>
 
   <script
-          src="https://code.jquery.com/jquery-3.3.1.min.js"
-          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-          crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
   <script src="assets/scripts/app.js"></script>
 </body>
 </html>
-
-<!-- TODO: Remvoe aniamte css hard reference -->
-<!-- TODO: Remvoe Bootstrap hard reference -->
-<!-- TODO: Cyberpunk Theme -->
-<!-- TODO: Search bar under title. Search bar stick to top and grows when scrolled down -->
