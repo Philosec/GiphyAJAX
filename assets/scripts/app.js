@@ -75,7 +75,7 @@ function populateGifs (searchTerm) {
   }, 600)
 
   setTimeout(() => {
-    $.get('http://api.giphy.com/v1/gifs/search?q=' + searchTerm + '&api_key=MUX29REBSPSXcbKKHoXY17xf11GYTExH&rating=pg&limit=10', (response) => {
+    $.get('https://api.giphy.com/v1/gifs/search?q=' + searchTerm + '&api_key=MUX29REBSPSXcbKKHoXY17xf11GYTExH&rating=pg&limit=10', (response) => {
       for (let i = 0; i < response.data.length; i++) {
         $('.card.gif-result-' + i).addClass('invisible');
 
